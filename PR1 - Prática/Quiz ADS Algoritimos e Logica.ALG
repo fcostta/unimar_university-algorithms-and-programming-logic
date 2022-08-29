@@ -21,7 +21,7 @@ Algoritmo "quizAdsAlgoritimosELogica"
 
 Var
    nome: caractere
-   status: caractere
+   status: caracter
    pontos: inteiro
    contador: inteiro
    resposta: inteiro
@@ -35,46 +35,58 @@ Inicio
    leia(nome)
    
    escreval("Questão 1: ")
-   repita
+   
+   enquanto (status <> "Ok") Faça
+
    escreva("[1] Sim  [2] Não  [3] Talvez")
    leia(resposta)
 
    escolha  resposta
    caso 1
-      escreva("Resposta Certa! Parabéns!")
+      escreva("***** Resposta Certa! Parabéns! *****")
       se contador = 0 entao
          pontos <- pontos + 10
          contador <- 0
-         escreval("  Você fez 10 pontos!")
-         escreval("  Total de pontos :", pontos)
-         
          status <- "Ok"
-         
+         escreval("***** Você fez 10 pontos! *****")
+         escreval("Total de pontos :", pontos)
+
       senao
+      
          se contador = 1 entao
             pontos <- pontos + 5
             contador <- 0
-            escreval("  Você fez 5 pontos!")
-            escreval("  Total de pontos :", pontos)
-            se contador > 1 entao
-               pontos <- pontos + 0
-               contador <- 0
-               escreval("  Você não pontuou, mas aprendeu!")
-               escreval("  Total de pontos :", pontos)
-               status <- "Ok"
-            fimse
+            status <- "Ok"
+            escreval("Você fez 5 pontos!")
+            escreval("Total de pontos :", pontos)
+
+            senao
+
+                 se contador > 1 entao
+                    pontos <- pontos + 0
+                    contador <- 0
+                    status <- "Ok"
+                    escreval("Parabéns, você não pontuou, mas aprendeu o conteúdo!")
+                    escreval("Total de pontos :", pontos)
+                 fimse
          fimse
       fimse
+      
    caso 2
       escreval("Você não acertou, tente novamente")
-      escreval("  Total de pontos :", pontos)
+      escreval("Total de pontos :", pontos)
       contador <- contador + 1
+      status <- "NOk"
+
    caso 3
       escreval("Você não acertou, tente novamente")
-      escreval("  Total de pontos :", pontos)
+      escreval("Total de pontos :", pontos)
       contador <- contador + 1
+      status <- "NOk"
+
    fimescolha
-   até (status = "Ok")
+
+   fimenquanto
 
    escreval(" ")
    escreval("F I M")
