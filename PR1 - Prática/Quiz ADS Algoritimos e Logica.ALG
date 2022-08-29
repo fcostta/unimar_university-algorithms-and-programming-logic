@@ -34,10 +34,10 @@ Inicio
    escreva("Informe seu nome: ")
    leia(nome)
    
-   escreval("Questão 1: ")
-   
-   enquanto (status <> "Ok") Faça
 
+ "Questão 1 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+   enquanto (status <> "Ok") Faça
+   escreval("Questão 1: ")
    escreva("[1] Sim  [2] Não  [3] Talvez")
    leia(resposta)
 
@@ -88,10 +88,521 @@ Inicio
 
    fimenquanto
 
+              contador <- 0
+              status <- ""
+
+"Questão 2 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+   enquanto (status <> "Ok") Faça
+   escreval("Questão 2: ")
+   escreva("[1] Sim  [2] Não  [3] Talvez")
+   leia(resposta)
+
+   escolha  resposta
+   caso 3
+      escreva("***** Resposta Certa! Parabéns! *****")
+      se contador = 0 entao
+         pontos <- pontos + 10
+         contador <- 0
+         status <- "Ok"
+         escreval("***** Você fez 10 pontos! *****")
+         escreval("Total de pontos :", pontos)
+
+      senao
+
+         se contador = 1 entao
+            pontos <- pontos + 5
+            contador <- 0
+            status <- "Ok"
+            escreval("Você fez 5 pontos!")
+            escreval("Total de pontos :", pontos)
+
+            senao
+
+                 se contador > 1 entao
+                    pontos <- pontos + 0
+                    contador <- 0
+                    status <- "Ok"
+                    escreval("Parabéns, você não pontuou, mas aprendeu o conteúdo!")
+                    escreval("Total de pontos :", pontos)
+                 fimse
+         fimse
+      fimse
+
+   caso 1
+      escreval("Você não acertou, tente novamente")
+      escreval("Total de pontos :", pontos)
+      contador <- contador + 1
+      status <- "NOk"
+
+   caso 2
+      escreval("Você não acertou, tente novamente")
+      escreval("Total de pontos :", pontos)
+      contador <- contador + 1
+      status <- "NOk"
+
+   fimescolha
+
+   fimenquanto
+              contador <- 0
+              status <- ""
+
+"Questão 3 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+   enquanto (status <> "Ok") Faça
+   escreval("Questão 3: ")
+   escreva("[1] Sim  [2] Não  [3] Talvez")
+   leia(resposta)
+
+   escolha  resposta
+   caso 2
+      escreva("***** Resposta Certa! Parabéns! *****")
+      se contador = 0 entao
+         pontos <- pontos + 10
+         contador <- 0
+         status <- "Ok"
+         escreval("***** Você fez 10 pontos! *****")
+         escreval("Total de pontos :", pontos)
+
+      senao
+
+         se contador = 1 entao
+            pontos <- pontos + 5
+            contador <- 0
+            status <- "Ok"
+            escreval("Você fez 5 pontos!")
+            escreval("Total de pontos :", pontos)
+
+            senao
+
+                 se contador > 1 entao
+                    pontos <- pontos + 0
+                    contador <- 0
+                    status <- "Ok"
+                    escreval("Parabéns, você não pontuou, mas aprendeu o conteúdo!")
+                    escreval("Total de pontos :", pontos)
+                 fimse
+         fimse
+      fimse
+
+   caso 1
+      escreval("Você não acertou, tente novamente")
+      escreval("Total de pontos :", pontos)
+      contador <- contador + 1
+      status <- "NOk"
+
+   caso 3
+      escreval("Você não acertou, tente novamente")
+      escreval("Total de pontos :", pontos)
+      contador <- contador + 1
+      status <- "NOk"
+
+   fimescolha
+
+   fimenquanto
+
+              contador <- 0
+              status <- ""
+
+
+"Questão 4 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+   enquanto (status <> "Ok") Faça
+   escreval("Questão 4: ")
+   escreva("[1] Sim  [2] Não  [3] Talvez")
+   leia(resposta)
+
+   escolha  resposta
+   caso 1
+      escreva("***** Resposta Certa! Parabéns! *****")
+      se contador = 0 entao
+         pontos <- pontos + 10
+         contador <- 0
+         status <- "Ok"
+         escreval("***** Você fez 10 pontos! *****")
+         escreval("Total de pontos :", pontos)
+
+      senao
+
+         se contador = 1 entao
+            pontos <- pontos + 5
+            contador <- 0
+            status <- "Ok"
+            escreval("Você fez 5 pontos!")
+            escreval("Total de pontos :", pontos)
+
+            senao
+
+                 se contador > 1 entao
+                    pontos <- pontos + 0
+                    contador <- 0
+                    status <- "Ok"
+                    escreval("Parabéns, você não pontuou, mas aprendeu o conteúdo!")
+                    escreval("Total de pontos :", pontos)
+                 fimse
+         fimse
+      fimse
+
+   caso 2
+      escreval("Você não acertou, tente novamente")
+      escreval("Total de pontos :", pontos)
+      contador <- contador + 1
+      status <- "NOk"
+
+   caso 3
+      escreval("Você não acertou, tente novamente")
+      escreval("Total de pontos :", pontos)
+      contador <- contador + 1
+      status <- "NOk"
+
+   fimescolha
+
+   fimenquanto
+
+              contador <- 0
+              status <- ""
+
+"Questão 5 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+   enquanto (status <> "Ok") Faça
+   escreval("Questão 5: ")
+   escreva("[1] Sim  [2] Não  [3] Talvez")
+   leia(resposta)
+
+   escolha  resposta
+   caso 3
+      escreva("***** Resposta Certa! Parabéns! *****")
+      se contador = 0 entao
+         pontos <- pontos + 10
+         contador <- 0
+         status <- "Ok"
+         escreval("***** Você fez 10 pontos! *****")
+         escreval("Total de pontos :", pontos)
+
+      senao
+
+         se contador = 1 entao
+            pontos <- pontos + 5
+            contador <- 0
+            status <- "Ok"
+            escreval("Você fez 5 pontos!")
+            escreval("Total de pontos :", pontos)
+
+            senao
+
+                 se contador > 1 entao
+                    pontos <- pontos + 0
+                    contador <- 0
+                    status <- "Ok"
+                    escreval("Parabéns, você não pontuou, mas aprendeu o conteúdo!")
+                    escreval("Total de pontos :", pontos)
+                 fimse
+         fimse
+      fimse
+
+   caso 2
+      escreval("Você não acertou, tente novamente")
+      escreval("Total de pontos :", pontos)
+      contador <- contador + 1
+      status <- "NOk"
+
+   caso 1
+      escreval("Você não acertou, tente novamente")
+      escreval("Total de pontos :", pontos)
+      contador <- contador + 1
+      status <- "NOk"
+
+   fimescolha
+
+   fimenquanto
+
+              contador <- 0
+              status <- ""
+
+
+"Questão 6 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+   enquanto (status <> "Ok") Faça
+   escreval("Questão 6: ")
+   escreva("[1] Sim  [2] Não  [3] Talvez")
+   leia(resposta)
+
+   escolha  resposta
+   caso 2
+      escreva("***** Resposta Certa! Parabéns! *****")
+      se contador = 0 entao
+         pontos <- pontos + 10
+         contador <- 0
+         status <- "Ok"
+         escreval("***** Você fez 10 pontos! *****")
+         escreval("Total de pontos :", pontos)
+
+      senao
+
+         se contador = 1 entao
+            pontos <- pontos + 5
+            contador <- 0
+            status <- "Ok"
+            escreval("Você fez 5 pontos!")
+            escreval("Total de pontos :", pontos)
+
+            senao
+
+                 se contador > 1 entao
+                    pontos <- pontos + 0
+                    contador <- 0
+                    status <- "Ok"
+                    escreval("Parabéns, você não pontuou, mas aprendeu o conteúdo!")
+                    escreval("Total de pontos :", pontos)
+                 fimse
+         fimse
+      fimse
+
+   caso 3
+      escreval("Você não acertou, tente novamente")
+      escreval("Total de pontos :", pontos)
+      contador <- contador + 1
+      status <- "NOk"
+
+   caso 1
+      escreval("Você não acertou, tente novamente")
+      escreval("Total de pontos :", pontos)
+      contador <- contador + 1
+      status <- "NOk"
+
+   fimescolha
+
+   fimenquanto
+
+              contador <- 0
+              status <- ""
+
+"Questão 7 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+   enquanto (status <> "Ok") Faça
+   escreval("Questão 7: ")
+   escreva("[1] Sim  [2] Não  [3] Talvez")
+   leia(resposta)
+
+   escolha  resposta
+   caso 3
+      escreva("***** Resposta Certa! Parabéns! *****")
+      se contador = 0 entao
+         pontos <- pontos + 10
+         contador <- 0
+         status <- "Ok"
+         escreval("***** Você fez 10 pontos! *****")
+         escreval("Total de pontos :", pontos)
+
+      senao
+
+         se contador = 1 entao
+            pontos <- pontos + 5
+            contador <- 0
+            status <- "Ok"
+            escreval("Você fez 5 pontos!")
+            escreval("Total de pontos :", pontos)
+
+            senao
+
+                 se contador > 1 entao
+                    pontos <- pontos + 0
+                    contador <- 0
+                    status <- "Ok"
+                    escreval("Parabéns, você não pontuou, mas aprendeu o conteúdo!")
+                    escreval("Total de pontos :", pontos)
+                 fimse
+         fimse
+      fimse
+
+   caso 2
+      escreval("Você não acertou, tente novamente")
+      escreval("Total de pontos :", pontos)
+      contador <- contador + 1
+      status <- "NOk"
+
+   caso 1
+      escreval("Você não acertou, tente novamente")
+      escreval("Total de pontos :", pontos)
+      contador <- contador + 1
+      status <- "NOk"
+
+   fimescolha
+
+   fimenquanto
+
+              contador <- 0
+              status <- ""
+
+"Questão 8 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+   enquanto (status <> "Ok") Faça
+   escreval("Questão 8: ")
+   escreva("[1] Sim  [2] Não  [3] Talvez")
+   leia(resposta)
+
+   escolha  resposta
+   caso 1
+      escreva("***** Resposta Certa! Parabéns! *****")
+      se contador = 0 entao
+         pontos <- pontos + 10
+         contador <- 0
+         status <- "Ok"
+         escreval("***** Você fez 10 pontos! *****")
+         escreval("Total de pontos :", pontos)
+
+      senao
+
+         se contador = 1 entao
+            pontos <- pontos + 5
+            contador <- 0
+            status <- "Ok"
+            escreval("Você fez 5 pontos!")
+            escreval("Total de pontos :", pontos)
+
+            senao
+
+                 se contador > 1 entao
+                    pontos <- pontos + 0
+                    contador <- 0
+                    status <- "Ok"
+                    escreval("Parabéns, você não pontuou, mas aprendeu o conteúdo!")
+                    escreval("Total de pontos :", pontos)
+                 fimse
+         fimse
+      fimse
+
+   caso 2
+      escreval("Você não acertou, tente novamente")
+      escreval("Total de pontos :", pontos)
+      contador <- contador + 1
+      status <- "NOk"
+
+   caso 3
+      escreval("Você não acertou, tente novamente")
+      escreval("Total de pontos :", pontos)
+      contador <- contador + 1
+      status <- "NOk"
+
+   fimescolha
+
+   fimenquanto
+
+              contador <- 0
+              status <- ""
+
+"Questão 9 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+   enquanto (status <> "Ok") Faça
+   escreval("Questão 9: ")
+   escreva("[1] Sim  [2] Não  [3] Talvez")
+   leia(resposta)
+
+   escolha  resposta
+   caso 1
+      escreva("***** Resposta Certa! Parabéns! *****")
+      se contador = 0 entao
+         pontos <- pontos + 10
+         contador <- 0
+         status <- "Ok"
+         escreval("***** Você fez 10 pontos! *****")
+         escreval("Total de pontos :", pontos)
+
+      senao
+
+         se contador = 1 entao
+            pontos <- pontos + 5
+            contador <- 0
+            status <- "Ok"
+            escreval("Você fez 5 pontos!")
+            escreval("Total de pontos :", pontos)
+
+            senao
+
+                 se contador > 1 entao
+                    pontos <- pontos + 0
+                    contador <- 0
+                    status <- "Ok"
+                    escreval("Parabéns, você não pontuou, mas aprendeu o conteúdo!")
+                    escreval("Total de pontos :", pontos)
+                 fimse
+         fimse
+      fimse
+
+   caso 2
+      escreval("Você não acertou, tente novamente")
+      escreval("Total de pontos :", pontos)
+      contador <- contador + 1
+      status <- "NOk"
+
+   caso 3
+      escreval("Você não acertou, tente novamente")
+      escreval("Total de pontos :", pontos)
+      contador <- contador + 1
+      status <- "NOk"
+
+   fimescolha
+
+   fimenquanto
+
+              contador <- 0
+              status <- ""
+
+"Questão 10 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+   enquanto (status <> "Ok") Faça
+   escreval("Questão 10: ")
+   escreva("[1] Sim  [2] Não  [3] Talvez")
+   leia(resposta)
+
+   escolha  resposta
+   caso 2
+      escreva("***** Resposta Certa! Parabéns! *****")
+      se contador = 0 entao
+         pontos <- pontos + 10
+         contador <- 0
+         status <- "Ok"
+         escreval("***** Você fez 10 pontos! *****")
+         escreval("Total de pontos :", pontos)
+
+      senao
+
+         se contador = 1 entao
+            pontos <- pontos + 5
+            contador <- 0
+            status <- "Ok"
+            escreval("Você fez 5 pontos!")
+            escreval("Total de pontos :", pontos)
+
+            senao
+
+                 se contador > 1 entao
+                    pontos <- pontos + 0
+                    contador <- 0
+                    status <- "Ok"
+                    escreval("Parabéns, você não pontuou, mas aprendeu o conteúdo!")
+                    escreval("Total de pontos :", pontos)
+                 fimse
+         fimse
+      fimse
+
+   caso 3
+      escreval("Você não acertou, tente novamente")
+      escreval("Total de pontos :", pontos)
+      contador <- contador + 1
+      status <- "NOk"
+
+   caso 1
+      escreval("Você não acertou, tente novamente")
+      escreval("Total de pontos :", pontos)
+      contador <- contador + 1
+      status <- "NOk"
+
+   fimescolha
+
+   fimenquanto
+
+              contador <- 0
+              status <- ""
+
+
+   " - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
+
    escreval(" ")
    escreval("F I M")
    escreval(" ")
-   escreval("Saldo de pontos ", pontos)
+   escreval(nome, ", seu saldo de pontos foi: ", pontos)
    escreval(" ")
    escreval("Obrigado por participar, até logo!!!")
 
