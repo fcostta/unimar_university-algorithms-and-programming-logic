@@ -25,11 +25,13 @@ Var
    pontos: inteiro
    contador: inteiro
    resposta: inteiro
+   contadorTentativas: inteiro
 
 Inicio
 
    pontos <- 0,00
    contador <- 0
+   contadorTentativas <- 0
 
    escreva("Informe seu nome: ")
    leia(nome)
@@ -40,6 +42,7 @@ Inicio
    escreval("Questão 1: ")
    escreva("[1] Sim  [2] Não  [3] Talvez")
    leia(resposta)
+   contadorTentativas <- contadorTentativas + 1
 
    escolha  resposta
    caso 1
@@ -96,6 +99,7 @@ Inicio
    escreval("Questão 2: ")
    escreva("[1] Sim  [2] Não  [3] Talvez")
    leia(resposta)
+   contadorTentativas <- contadorTentativas + 1
 
    escolha  resposta
    caso 3
@@ -151,6 +155,7 @@ Inicio
    escreval("Questão 3: ")
    escreva("[1] Sim  [2] Não  [3] Talvez")
    leia(resposta)
+   contadorTentativas <- contadorTentativas + 1
 
    escolha  resposta
    caso 2
@@ -208,6 +213,7 @@ Inicio
    escreval("Questão 4: ")
    escreva("[1] Sim  [2] Não  [3] Talvez")
    leia(resposta)
+   contadorTentativas <- contadorTentativas + 1
 
    escolha  resposta
    caso 1
@@ -264,6 +270,7 @@ Inicio
    escreval("Questão 5: ")
    escreva("[1] Sim  [2] Não  [3] Talvez")
    leia(resposta)
+   contadorTentativas <- contadorTentativas + 1
 
    escolha  resposta
    caso 3
@@ -321,6 +328,7 @@ Inicio
    escreval("Questão 6: ")
    escreva("[1] Sim  [2] Não  [3] Talvez")
    leia(resposta)
+   contadorTentativas <- contadorTentativas + 1
 
    escolha  resposta
    caso 2
@@ -377,7 +385,8 @@ Inicio
    escreval("Questão 7: ")
    escreva("[1] Sim  [2] Não  [3] Talvez")
    leia(resposta)
-
+   contadorTentativas <- contadorTentativas + 1
+   
    escolha  resposta
    caso 3
       escreva("***** Resposta Certa! Parabéns! *****")
@@ -433,6 +442,7 @@ Inicio
    escreval("Questão 8: ")
    escreva("[1] Sim  [2] Não  [3] Talvez")
    leia(resposta)
+   contadorTentativas <- contadorTentativas + 1
 
    escolha  resposta
    caso 1
@@ -489,6 +499,7 @@ Inicio
    escreval("Questão 9: ")
    escreva("[1] Sim  [2] Não  [3] Talvez")
    leia(resposta)
+   contadorTentativas <- contadorTentativas + 1
 
    escolha  resposta
    caso 1
@@ -545,6 +556,7 @@ Inicio
    escreval("Questão 10: ")
    escreva("[1] Sim  [2] Não  [3] Talvez")
    leia(resposta)
+   contadorTentativas <- contadorTentativas + 1
 
    escolha  resposta
    caso 2
@@ -598,12 +610,62 @@ Inicio
 
 
    " - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
+            se pontos = 100 entao
+               escreval(" ")
+               escreval("F I M")
+               escreval(" ")
+               escreval(nome, ", excelente desempenho! Seu saldo de pontos foi: ", pontos)
+               escreval("Foram ", contadorTentativas, " tentativas de acerto.")
+               escreval(" ")
+               escreval("Obrigado por participar, até logo!!!")
 
-   escreval(" ")
-   escreval("F I M")
-   escreval(" ")
-   escreval(nome, ", seu saldo de pontos foi: ", pontos)
-   escreval(" ")
-   escreval("Obrigado por participar, até logo!!!")
+            senao
+
+                 se (pontos >= 75) e (pontos <= 99) entao
+                    escreval(" ")
+                    escreval("F I M")
+                    escreval(" ")
+                    escreval(nome, ", ótimo desempenho! Seu saldo de pontos foi: ", pontos)
+                    escreval("Foram ", contadorTentativas, " tentativas de acerto.")
+                    escreval(" ")
+                    escreval("Obrigado por participar, até logo!!!")
+
+                 senao
+
+                         se (pontos >= 50) e (pontos <= 74) entao
+                            escreval(" ")
+                            escreval("F I M")
+                            escreval(" ")
+                            escreval(nome, ", bom desempenho! Seu saldo de pontos foi: ", pontos)
+                            escreval("Foram ", contadorTentativas, " tentativas de acerto.")
+                            escreval(" ")
+                            escreval("Obrigado por participar, até logo!!!")
+
+                         senao
+
+                                 se (pontos >= 25) e (pontos <= 49) entao
+                                    escreval(" ")
+                                    escreval("F I M")
+                                    escreval(" ")
+                                    escreval(nome, ", regular desempenho! Seu saldo de pontos foi: ", pontos)
+                                    escreval("Foram ", contadorTentativas, " tentativas de acerto.")
+                                    escreval(" ")
+                                    escreval("Obrigado por participar, até logo!!!")
+
+                                 senao
+                                         se (pontos <= 24) entao
+                                            escreval(" ")
+                                            escreval("F I M")
+                                            escreval(" ")
+                                            escreval(nome, ", péssimo desempenho! Seu saldo de pontos foi: ", pontos)
+                                            escreval("Foram ", contadorTentativas, " tentativas de acerto.")
+                                            escreval(" ")
+                                            escreval("Obrigado por participar, até logo!!!")
+                                        fimse
+                                fimse
+                        fimse
+                 fimse
+         fimse
+
 
 Fimalgoritmo
