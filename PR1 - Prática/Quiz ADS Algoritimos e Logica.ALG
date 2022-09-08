@@ -39,7 +39,7 @@ Inicio
 
  "Questão 1 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
    enquanto (status <> "Ok") Faça
-   escreval("Questão 1: ")
+   escreval("Questão 1: Programar é um ato que depende não só das habilidades de um prossional de desenvolvimento de software ou uma equipe de desenvolvedores?")
    escreva("[1] Sim  [2] Não  [3] Talvez")
    leia(resposta)
    contadorTentativas <- contadorTentativas + 1
@@ -96,7 +96,7 @@ Inicio
 
 "Questão 2 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
    enquanto (status <> "Ok") Faça
-   escreval("Questão 2: ")
+   escreval("Questão 2: Uma palavra reservada será igual em outra linguagem de programação?")
    escreva("[1] Sim  [2] Não  [3] Talvez")
    leia(resposta)
    contadorTentativas <- contadorTentativas + 1
@@ -152,7 +152,7 @@ Inicio
 
 "Questão 3 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
    enquanto (status <> "Ok") Faça
-   escreval("Questão 3: ")
+   escreval("Questão 3: É possivel utilizar uma palavra reservada para armazenar dados?")
    escreva("[1] Sim  [2] Não  [3] Talvez")
    leia(resposta)
    contadorTentativas <- contadorTentativas + 1
@@ -210,7 +210,7 @@ Inicio
 
 "Questão 4 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
    enquanto (status <> "Ok") Faça
-   escreval("Questão 4: ")
+   escreval("Questão 4: Compreender a estrutura de um algoritmo ou código de uma linguagem de programação é o primeiro passo essencial para se aprender a programar?")
    escreva("[1] Sim  [2] Não  [3] Talvez")
    leia(resposta)
    contadorTentativas <- contadorTentativas + 1
@@ -267,13 +267,13 @@ Inicio
 
 "Questão 5 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
    enquanto (status <> "Ok") Faça
-   escreval("Questão 5: ")
+   escreval("Questão 5: Praticar programação não representa apenas digitar códigos prontos e executá-los.?")
    escreva("[1] Sim  [2] Não  [3] Talvez")
    leia(resposta)
    contadorTentativas <- contadorTentativas + 1
 
    escolha  resposta
-   caso 3
+   caso 2
       escreva("***** Resposta Certa! Parabéns! *****")
       se contador = 0 entao
          pontos <- pontos + 10
@@ -303,7 +303,7 @@ Inicio
          fimse
       fimse
 
-   caso 2
+   caso 3
       escreval("Você não acertou, tente novamente")
       escreval("Total de pontos :", pontos)
       contador <- contador + 1
@@ -325,7 +325,7 @@ Inicio
 
 "Questão 6 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
    enquanto (status <> "Ok") Faça
-   escreval("Questão 6: ")
+   escreval("Questão 6: Interpretar problemas e avaliar situações não é muito importante, assim como não prever situações e elaborar meios para que um algoritmo possa conter as funcionalidades desejadas?")
    escreva("[1] Sim  [2] Não  [3] Talvez")
    leia(resposta)
    contadorTentativas <- contadorTentativas + 1
@@ -382,7 +382,7 @@ Inicio
 
 "Questão 7 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
    enquanto (status <> "Ok") Faça
-   escreval("Questão 7: ")
+   escreval("Questão 7: A utilização de operadores matemáticos é semelhante ao seu uso na matemática?")
    escreva("[1] Sim  [2] Não  [3] Talvez")
    leia(resposta)
    contadorTentativas <- contadorTentativas + 1
@@ -439,7 +439,7 @@ Inicio
 
 "Questão 8 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
    enquanto (status <> "Ok") Faça
-   escreval("Questão 8: ")
+   escreval("Questão 8: O símbolo “%” que é utilizado como operador resto da divisão entre dois valores serve para devolver como resposta o valor restante de uma divisão?")
    escreva("[1] Sim  [2] Não  [3] Talvez")
    leia(resposta)
    contadorTentativas <- contadorTentativas + 1
@@ -496,7 +496,7 @@ Inicio
 
 "Questão 9 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
    enquanto (status <> "Ok") Faça
-   escreval("Questão 9: ")
+   escreval("Questão 9: Operador relacional o utilizado como meio para a tomada de decisão para desvios na execução ou repetições de processamento?")
    escreva("[1] Sim  [2] Não  [3] Talvez")
    leia(resposta)
    contadorTentativas <- contadorTentativas + 1
@@ -553,7 +553,7 @@ Inicio
 
 "Questão 10 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
    enquanto (status <> "Ok") Faça
-   escreval("Questão 10: ")
+   escreval("Questão 10: Existem poucas operações lógicas utilizando operadores distintos para comparações que resultam sempre em valores verdadeiro ou falso?")
    escreva("[1] Sim  [2] Não  [3] Talvez")
    leia(resposta)
    contadorTentativas <- contadorTentativas + 1
